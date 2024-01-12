@@ -13,8 +13,6 @@ class WeatherViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet var cityLabel: UILabel!
     @IBOutlet var searchTextField: UITextField!
     
-    var sampleCall = "https://api.openweathermap.org/data/2.5/weather?appid=56597bbf24331d29314f4d0f9c28a95c&units=metric&q=london"
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
