@@ -12,12 +12,15 @@ class WeatherViewController: UIViewController {
     @IBOutlet var conditionImageView: UIImageView!
     @IBOutlet var temperatureLabel: UILabel!
     @IBOutlet var cityLabel: UILabel!
+    @IBOutlet var searchTextField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func searchPressed(_ sender: UIButton) {
+    }
+    
 }
 
