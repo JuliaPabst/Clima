@@ -28,5 +28,9 @@ struct WeatherManager {
             return
         }
         
+        if let safeData = data {
+            let dataString = String(data: safeData, encoding: .utf8)
+            print(dataString)
+        }
     }
 }
