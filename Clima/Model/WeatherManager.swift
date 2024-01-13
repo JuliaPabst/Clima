@@ -12,5 +12,15 @@ struct WeatherManager {
     
     func fetchWeather (city: String){
         let urlString = "\(weatherURL)&q=\(city)"
+        
+        if let url = URL(string: urlString) {
+            let session = URLSession(configuration: .default)
+            
+            let task = session.dataTask(with: url, completionHandler: <#T##(Data?, URLResponse?, Error?) -> Void#>)
+            
+            task.resume()
+        }
+        
+        print(urlString)
     }
 }
