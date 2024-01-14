@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A34E8B442B5437D500106AFB /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34E8B432B5437D500106AFB /* WeatherModel.swift */; };
 		A3824B802B503CBE0035E3D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3824B7F2B503CBE0035E3D9 /* AppDelegate.swift */; };
 		A3824B822B503CBE0035E3D9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3824B812B503CBE0035E3D9 /* SceneDelegate.swift */; };
 		A3824B842B503CBE0035E3D9 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3824B832B503CBE0035E3D9 /* WeatherViewController.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A34E8B432B5437D500106AFB /* WeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
 		A3824B7C2B503CBE0035E3D9 /* Clima.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Clima.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3824B7F2B503CBE0035E3D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A3824B812B503CBE0035E3D9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 			children = (
 				A3824BA52B519E4A0035E3D9 /* WeatherManager.swift */,
 				A3824BA82B542CCA0035E3D9 /* WeatherData.swift */,
+				A34E8B432B5437D500106AFB /* WeatherModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -172,6 +175,7 @@
 				A3824BA92B542CCA0035E3D9 /* WeatherData.swift in Sources */,
 				A3824B802B503CBE0035E3D9 /* AppDelegate.swift in Sources */,
 				A3824BA62B519E4A0035E3D9 /* WeatherManager.swift in Sources */,
+				A34E8B442B5437D500106AFB /* WeatherModel.swift in Sources */,
 				A3824B822B503CBE0035E3D9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
