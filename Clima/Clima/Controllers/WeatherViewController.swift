@@ -54,6 +54,9 @@ class WeatherViewController: UIViewController, UITextFieldDelegate, WeatherManag
         print(weather.temperatureString)
     }
     
+    func didFailWithError(error: Error) {
+        print(error)
+    }
 }
 
 
