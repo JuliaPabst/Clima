@@ -35,8 +35,8 @@ extension WeatherViewController: CLLocationManagerDelegate {
         if let location = locations.last {
             let latitude = location.coordinate.latitude
             let longitude = location.coordinate.longitude
-            print(latitude)
-            print(longitude)
+            weatherManager.fetchWeather(latitude: latitude, longitude: longitude)
+            
         }
     }
     
@@ -49,12 +49,10 @@ extension WeatherViewController: CLLocationManagerDelegate {
 //MARK: - UITextFieldDelegate
 extension WeatherViewController: UITextFieldDelegate {
     @IBAction func searchPressed(_ sender: UIButton) {
-         // print(searchTextField.text ?? "empty")
         searchTextField.endEditing(true)
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        // print(searchTextField.text ?? "empty")
         searchTextField.endEditing(true)
         return true
     }
