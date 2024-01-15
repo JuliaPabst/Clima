@@ -21,10 +21,20 @@ class WeatherViewController: UIViewController {
         super.viewDidLoad()
         weatherManager.delegate = self
         searchTextField.delegate = self
+        locationManager.delegate = self
         
         locationManager.requestWhenInUseAuthorization()
         locationManager.requestLocation()
     }
+}
+
+//MARK: _ CLLocationManagerDelegate
+
+extension WeatherViewController: CLLocationManagerDelegate {
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        print(locations)
+    }
+    
 }
 
 //MARK: - UITextFieldDelegate
