@@ -26,8 +26,9 @@ struct WeatherModel {
         case 781: return "tornado"
         case 800: return "sun.max"
         case 801: return "cloud.sun"
-        case 802 ... 804: return "cloud.bolt"
+        case 802 ... 804: return "cloud"
         default: return "cloud"
         }
     }
+    
 }
