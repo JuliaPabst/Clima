@@ -26,13 +26,18 @@ class WeatherViewController: UIViewController {
         locationManager.requestWhenInUseAuthorization()
         locationManager.requestLocation()
     }
+    
+    @IBAction func showCurrentLocationWeather(_ sender: UIButton) {
+        locationManager.requestLocation()
+    }
 }
 
-//MARK: _ CLLocationManagerDelegate
+//MARK: - CLLocationManagerDelegate
 
 extension WeatherViewController: CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         if let location = locations.last {
+            locationManager.stopUpdatingLocation()
             let latitude = location.coordinate.latitude
             let longitude = location.coordinate.longitude
             weatherManager.fetchWeather(latitude: latitude, longitude: longitude)

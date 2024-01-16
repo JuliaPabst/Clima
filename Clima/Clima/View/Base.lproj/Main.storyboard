@@ -39,6 +39,9 @@
                                                     <fontDescription key="titleFontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="1"/>
                                                     <color key="baseForegroundColor" systemColor="systemGroupedBackgroundColor"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="showCurrentLocationWeather:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AJL-hS-9bR"/>
+                                                </connections>
                                             </button>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search City" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kDF-hm-37s">
                                                 <rect key="frame" x="60" y="0.0" width="253" height="50"/>
